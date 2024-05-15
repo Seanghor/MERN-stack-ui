@@ -3,8 +3,6 @@
 ### Requirements for this project are
 
 -   [Node](https://nodejs.org/en)
--   [MongoDb](https://www.mongodb.com/)
--   [Postman](https://www.getpostman.com/)
 -   [Git](https://git-scm.com/)
 -   [Pnpm](https://pnpm.io/)
 
