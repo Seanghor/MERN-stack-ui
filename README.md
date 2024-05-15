@@ -2,7 +2,7 @@
 
 ### Requirements for this project are
 
--   [Node.js, v16.13.1](https://nodejs.org/fr/blog/release/v16.13.1/)
+-   [Node)
 -   [Postgresql](https://www.postgresql.org/)
 -   [Postman](https://www.getpostman.com/)
 -   [Git](https://git-scm.com/)
