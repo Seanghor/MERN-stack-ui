@@ -14,7 +14,7 @@ export const signUpAPI = async (signUpDto: SignUpUserDto) => {
 
     const status = response.status;
     const res = await response.json();
-    console.log('>>>>>> signUp API status', status);
+    // console.log('>>>>>> signUp API status', status);
     if (status === 201 || status === 200) {
         localStorage.setItem('accessToken', res.accessToken);
         localStorage.setItem('refreshToken', res.refreshToken);

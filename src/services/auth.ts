@@ -14,7 +14,7 @@ export const loginAPI = async (loginDto: SignInUserDto) => {
     });
     const status = await response.status;
     const res = await response.json();
-    console.log('>>>>>> login API status', res);
+    // console.log('>>>>>> login API status', res);
 
     if (status === 200 || status === 201) {
         localStorage.setItem('accessToken', res.accessToken);
