@@ -2,11 +2,11 @@
 
 ### Requirements for this project are
 
--   [Node)
--   [Postgresql](https://www.postgresql.org/)
+-   [Node]
+-   [MongoDb](https://www.mongodb.com/)
 -   [Postman](https://www.getpostman.com/)
 -   [Git](https://git-scm.com/)
--   [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+-   [Pnpm](https://pnpm.io/)
 
 ### Clone the repository
 
