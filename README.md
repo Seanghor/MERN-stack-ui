@@ -2,7 +2,7 @@
 
 ### Requirements for this project are
 
--   [Node]
+-   [Node](https://nodejs.org/en)
 -   [MongoDb](https://www.mongodb.com/)
 -   [Postman](https://www.getpostman.com/)
 -   [Git](https://git-scm.com/)
@@ -11,42 +11,25 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/HengKevin/rest-attend-api.git
+git clone https://github.com/Seanghor/MERN-stack-ui
 ```
 
 ### Install dependencies
 
 ```bash
-yarn install
-```
-
-### Run migrations
-
-```bash
-npx prisma generate
-```
-
-### Update Server's database
-
-```bash
-nxp prisma db push
+pnpm install
 ```
 
 ### Run the application on dev
 
 ```bash
-yarn start:dev
+pnpm run dev
 ```
 
-### To access the Swagger documentation of api localhost
-```bash
-localhost:3000/api/v1
-```
-
-### Run the tests
+### Run build
 
 ```bash
-yarn test
+pnpm run build
 ```
 
 ## Local test
@@ -54,5 +37,5 @@ yarn test
 ### .env
     
 ```bash
-DATABASE_URL=postgresql://{username}:{password}@{host}:{port}/{database_name}?schema=public
+VITE_BASE_URL=http://localhost:3000/api/v1
 ```
