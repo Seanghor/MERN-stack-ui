@@ -10,7 +10,7 @@ const LogOutButton = () => {
         navigate('/signin')
     }
     return (
-        <div className="p-px fixed top-[80px] md:top-[90px] lg:top-[90px] right-4 md:right-8 lg:right-10">
+        <div className="p-px fixed top-[10px] md:top-[30px] lg:top-[50px] right-3 md:right-4 lg:right-10">
             <button
                 onClick={handleSignOut}
                 className="border-2 rounded-md px-4 py-2 bg-zinc-400 hover:bg-zinc-700 text-white-normal hover:text-white transition-all duration-300 flex items-center justify-center"

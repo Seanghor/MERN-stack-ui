@@ -32,7 +32,7 @@ export const createTask = async (task: string) => {
     });
     const status = response.status;
     const res = await response.json();
-    console.log('>>>>>> createTask API status', res.error)
+    // console.log('>>>>>> createTask API status', res.error)
 
     if (status === 201 || status === 200) {
         return { status, data: res.data };
@@ -53,7 +53,7 @@ export const deleteTask = async (id: string) => {
         },
         body: JSON.stringify({ id: id }),
     });
-    console.log('>>>>>> deleteTask API status', response);
+    // console.log('>>>>>> deleteTask API status', response);
     return response.status;
 }
 
@@ -69,7 +69,7 @@ export const updateTask = async (id: string, task: { name: string }) => {
     });
     const status = response.status;
     const res = await response.json();
-    console.log('>>>>>> updateTask API status', res);
+    // console.log('>>>>>> updateTask API status', res);
     if (status === 200) {
         return { status, data: res.data };
     } else {
@@ -87,7 +87,7 @@ export const toggleTaskStatus = async (id: string, status: string) => {
         body: JSON.stringify({ status: status }),
     });
     const res = await response.json();
-    console.log('>>>>>> toggleTaskStatus API status', res);
+    // console.log('>>>>>> toggleTaskStatus API status', res);
     return { status: response.status, data: res.data};
 }
 
@@ -100,5 +100,7 @@ export const removeAllChecked = async () => {
             Authorization: `Bearer ${getAccessToken()}`
         },
     });
+    // console.log('>>>>>> removeAllChecked API status', response.status);
+    
     return response.status;
 }

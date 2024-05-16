@@ -48,7 +48,7 @@ const EachTask: React.FC<EachTaskProps> = ({ id, name, status, onDelete, onUpdat
                             className="w-full text-base md:text-lg lg:text-xl border rounded px-2 md:px-4 lg:px-6 py-2 md:py-1.5 lg:py-2"
                         />
                     ) : (
-                        <h5 className='text-base md:text-lg lg:text-xl px-2 md:px-4 lg:px-6 py-1 md:py-1.5 lg:py-2'>{name}</h5>
+                        <h5 className={`${status === "DONE" ? "line-through" : null} text-base md:text-lg lg:text-xl px-2 md:px-4 lg:px-6 py-1 md:py-1.5 lg:py-2`}>{name}</h5>
                     )}
                 </div>
                 <div className='flex flex-row justify-end items-center'>

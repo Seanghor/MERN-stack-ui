@@ -7,9 +7,9 @@ interface RemoveCheckedButtonProps {
 const RemoveCheckedButton: React.FC<RemoveCheckedButtonProps> = ({ onRemoveChecked }) => {
     const [errorMessage, setErrorMessage] = useState<string>('');
 
-    const handleRemoveChecked =  () => {
+    const handleRemoveChecked = async () => {
         try {
-            onRemoveChecked();
+            await onRemoveChecked();
         } catch (error) {
             setErrorMessage('Error failed to remove checked');
             setTimeout(() => {
